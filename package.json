@@ -1,0 +1,29 @@
+{
+  "name": "rest-api",
+  "version": "1.0.0",
+  "description": "About restful api",
+  "main": "app.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "mocha --timeout 5000",
+    "start": "nodemon app.js"
+  },
+  "author": "Samuel",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "express-validator": "^5.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.3",
+    "multer": "^1.4.5-lts.1",
+    "socket.io": "^2.5.1"
+  },
+  "devDependencies": {
+    "chai": "^4.4.1",
+    "mocha": "^10.7.3",
+    "nodemon": "^3.1.4",
+    "sinon": "^18.0.0"
+  }
+}
