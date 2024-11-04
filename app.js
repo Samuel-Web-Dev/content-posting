@@ -50,7 +50,7 @@ app.use((error, req, res, next) => {
     res.status(status).json({message: message, data: data})
 })
 
-mongoose.connect('mongodb+srv://samlekchris:Xj7j8PGOj9YdG3Id@first-project.y8uqnxq.mongodb.net/blog?retryWrites=true&w=majority&appName=first-project').then(() => {
+mongoose.connect(`mongodb+srv://${process.env.DATABASE_USERNAME}:${process.env.DATABASE_PASSWORD}@first-project.y8uqnxq.mongodb.net/blog?retryWrites=true&w=majority&appName=first-project`).then(() => {
     console.log('Successfully connected to the database')
     const server = app.listen(8080)
     const io = require('./socket').init(server);
