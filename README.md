@@ -1,4 +1,6 @@
-Posting Application Backend
+POSTING APPLICATION BACKEND
+
+
 This is a backend API for a posting application built with Express.js and Socket.IO. The API allows users to create, view, update, and delete posts, create accounts, log in, and receive instant notifications.
 
 Features
